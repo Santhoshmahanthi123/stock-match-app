@@ -1,0 +1,17 @@
+<% include partials/header %>
+<div style="background:light !important" class="jumbotron">
+
+<h1 style="text-align:center">Please enter buyer's id to see their matched seller.</h1>
+
+<div class="container-fluid" style="width: 30%; margin:25px auto;">
+<form action="/match" method="POST">
+    <div class="form-group">
+        <input class="form-control" type="text" name="id" placeholder="Enter buyer's id">
+        </div>
+    <button class="btn btn-sm btn-primary btn-block">Submit</button>
+    </div>
+</form>
+<a href="/  "> Go Back!</a> <br>
+</div>
+</div>
+<% include partials/footer %>

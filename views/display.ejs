@@ -1,0 +1,31 @@
+<% include partials/header %>
+<body>
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Here is your search result</h1>
+                  <h3 style="color:blue">The matched sellers are:</h3><br><p style="color:tomato"><%= mapped%></p>
+                  <% mapped.forEach(item=>{ %>
+                      <div>
+                          <%item._id%>
+                          <%item.price%>
+                          <%item.quantity%>
+                          <%item.date%>
+
+                      </div>
+                 <% }) %>
+                  <h3 style="color:green">The un matched sellers are:</h3><br><p style="color:tomato"><%= unmapped%></p>
+                  <% mapped.forEach(item=>{ %>
+        
+                        <%item._id%>
+                        <%item.price%>
+                        <%item.quantity%>
+                        <%item.date%>
+
+                    </div>
+              <%  }) %>
+                </div>
+              </div>
+</body>
+
+
+<% include partials/footer %>
